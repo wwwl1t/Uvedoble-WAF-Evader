@@ -33,3 +33,62 @@
    ```bash
    git clone https://github.com/tu_usuario/UveDoble-WAF-Evader.git
    cd UveDoble-WAF-Evader
+
+   
+# Evasor WAF - Instrucciones de Uso
+
+## Interfaz de Línea de Comandos (CLI)
+
+### Ejecutar la CLI:
+
+```bash
+python evasor_waf.py
+```
+
+### Pasos Básicos:
+
+1. **Ingresar el Payload:**
+
+   Se te solicitará ingresar el payload original que deseas procesar.
+
+   ```plaintext
+   Ingrese el payload original: SELECT * FROM users WHERE id=1
+   ```
+
+2. **Seleccionar una Técnica:**
+
+   Elige una opción del menú numerado para aplicar la técnica deseada.
+
+   ```plaintext
+   Seleccione una opción (1-10): 1
+   ```
+
+3. **Ver el Resultado:**
+
+   El resultado de la técnica aplicada se mostrará en la terminal.
+
+   ```plaintext
+   Resultado:
+   SELECT%20*%20FROM%20users%20WHERE%20id%3D1
+   ```
+
+4. **Opciones Adicionales:**
+
+   Después de aplicar una técnica, puedes optar por aplicar otra o salir.
+
+### Mostrar Ayuda:
+
+Para ver la ayuda y opciones disponibles:
+
+```bash
+python evasor_waf.py --help
+```
+
+## Interfaz Gráfica de Usuario (GUI)
+
+### Ejecutar la GUI:
+
+```bash
+python evasor_waf.py gui
+```
+
