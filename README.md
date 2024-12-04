@@ -5,7 +5,6 @@
 
 - [Descripción](#descripción)
 - [Características](#características)
-- [Capturas de Pantalla](#capturas-de-pantalla)
 - [Prerequisitos](#prerequisitos)
 - [Instalación](#instalación)
 - [Configuración](#configuración)
