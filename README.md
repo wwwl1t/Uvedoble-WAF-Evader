@@ -1,6 +1,6 @@
 # Detector de WAF y Herramientas - Uvedoble
 
-![App Logo](path_to_logo_image.png)
+
 
 ## Tabla de Contenidos
 
@@ -49,7 +49,8 @@ El proyecto está personalizado y desarrollado por **Uvedoble**, ofreciendo una 
 
 ## Capturas de Pantalla
 
-![Pantalla Principal](path_to_main_screen.png)
+![Pantalla Principal](![image](https://github.com/user-attachments/assets/df11f543-c616-475c-9521-d7e38aa79418)
+)
 *Pantalla principal de la aplicación.*
 
 ![Detección de WAF](path_to_waf_detection.png)
