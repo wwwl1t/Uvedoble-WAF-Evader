@@ -1,94 +1,81 @@
-# UveDoble WAF Evader
+# Detector de WAF y Herramientas - Uvedoble
+
+![App Logo](path_to_logo_image.png)
+
+## Tabla de Contenidos
+
+- [Descripción](#descripción)
+- [Características](#características)
+- [Capturas de Pantalla](#capturas-de-pantalla)
+- [Prerequisitos](#prerequisitos)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
+- [Uso](#uso)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
+- [Contacto](#contacto)
 
 ## Descripción
 
-**UveDoble WAF Evader** es una herramienta diseñada para aplicar diversas técnicas de evasión a Web Application Firewalls (WAF) durante pruebas de seguridad, principalmente para SQLi. Ofrece tanto una interfaz de línea de comandos (CLI) como una interfaz gráfica de usuario (GUI), proporcionando flexibilidad y facilidad de uso para profesionales en ciberseguridad.
+**Detector de WAF y Herramientas - Uvedoble** es una aplicación de escritorio desarrollada en Python utilizando PyQt5. Esta herramienta permite a los usuarios:
+
+- **Detectar WAFs (Web Application Firewalls)** en sitios web mediante el uso de `wafw00f` y análisis de encabezados HTTP.
+- **Codificar y Decodificar** textos utilizando diversos métodos como Base64, URL Encode, Hex, Rot13, MD5, SHA1 y SHA256.
+- **Decodificar Hashes** mediante la integración con la API de [md5decrypt.net](https://md5decrypt.net/en/API/).
+- **Aplicar Técnicas de Evasión WAF SQLi** para pruebas de seguridad.
+
+El proyecto está personalizado y desarrollado por **Uvedoble**, ofreciendo una interfaz amigable y funcionalidades robustas para profesionales de la seguridad informática.
 
 ## Características
 
-- **Interfaz de Línea de Comandos (CLI):**
-  - Aplicación rápida de técnicas de evasión.
-  - Soporte para múltiples técnicas (codificación URL, Base64, Hexadecimal, etc.).
-  - Registro de actividades en un archivo de log.
+- **Detección de WAFs**:
+  - Utiliza `wafw00f` para detectar WAFs comunes.
+  - Análisis adicional de encabezados HTTP y patrones en el cuerpo de las respuestas para identificar WAFs.
 
-- **Interfaz Gráfica de Usuario (GUI):**
-  - Ventana redimensionable y adaptable.
-  - Selección intuitiva de técnicas mediante combobox.
-  - Visualización de descripciones y resultados en tiempo real.
-  - Botones accesibles para aplicar técnicas y cerrar la GUI.
+- **Encode/Decode**:
+  - Soporte para múltiples métodos de codificación y decodificación.
+  - Funcionalidades para funciones hash como MD5, SHA1 y SHA256.
+
+- **Decodificación de Hashes**:
+  - Integración con la API de [md5decrypt.net](https://md5decrypt.net/en/API/) para intentar recuperar valores originales a partir de hashes conocidos.
+
+- **Evasor WAF SQLi**:
+  - Diversas técnicas para modificar payloads y evadir detecciones de WAFs.
+  - Personalización de palabras clave utilizadas en las técnicas de evasión.
+
+- **Interfaz Personalizada**:
+  - Modo claro y oscuro.
+  - Barra de título y barra inferior personalizada con el nombre del desarrollador, **Uvedoble**.
+
+## Capturas de Pantalla
+
+![Pantalla Principal](path_to_main_screen.png)
+*Pantalla principal de la aplicación.*
+
+![Detección de WAF](path_to_waf_detection.png)
+*Sección de detección de WAFs.*
+
+![Encode/Decode](path_to_encode_decode.png)
+*Sección de codificación y decodificación.*
+
+![Evasor WAF SQLi](path_to_evasor.png)
+*Sección de evasión de WAF SQLi.*
+
+## Prerequisitos
+
+Antes de instalar y ejecutar la aplicación, asegúrate de tener instalados los siguientes componentes:
+
+- **Sistema Operativo**: Windows, macOS o Linux.
+- **Python**: Versión 3.7 o superior.
+- **pip**: Administrador de paquetes de Python.
+- **wafw00f**: Herramienta para la detección de WAFs.
 
 ## Instalación
 
-### Requisitos Previos
+Sigue estos pasos para instalar y configurar la aplicación:
 
-- **Python 3.6 o superior**.
-- **Bibliotecas Python:**
-  - `tkinter` (generalmente incluido con Python).
-  - `ttk` (incluido con `tkinter`).
-
-### Pasos de Instalación
-
-1. **Clonar el Repositorio:**
-
-   ```bash
-   git clone https://github.com/wwwl1t/Uvedoble-WAF-Evader.git
-   cd UveDoble-WAF-Evader
-
-   
-# Evasor WAF - Instrucciones de Uso
-
-## Interfaz de Línea de Comandos (CLI)
-
-### Ejecutar la CLI:
+### 1. Clonar el Repositorio
 
 ```bash
-python evasor_waf.py
-```
-
-### Pasos Básicos:
-
-1. **Ingresar el Payload:**
-
-   Se te solicitará ingresar el payload original que deseas procesar.
-
-   ```plaintext
-   Ingrese el payload original: SELECT * FROM users WHERE id=1
-   ```
-
-2. **Seleccionar una Técnica:**
-
-   Elige una opción del menú numerado para aplicar la técnica deseada.
-
-   ```plaintext
-   Seleccione una opción (1-10): 1
-   ```
-
-3. **Ver el Resultado:**
-
-   El resultado de la técnica aplicada se mostrará en la terminal.
-
-   ```plaintext
-   Resultado:
-   SELECT%20*%20FROM%20users%20WHERE%20id%3D1
-   ```
-
-4. **Opciones Adicionales:**
-
-   Después de aplicar una técnica, puedes optar por aplicar otra o salir.
-
-### Mostrar Ayuda:
-
-Para ver la ayuda y opciones disponibles:
-
-```bash
-python evasor_waf.py --help
-```
-
-## Interfaz Gráfica de Usuario (GUI)
-
-### Ejecutar la GUI:
-
-```bash
-python evasor_waf.py gui
-```
-
+git clone https://github.com/tu_usuario/Detector-de-WAF-y-Herramientas-Uvedoble.git
+cd Detector-de-WAF-y-Herramientas-Uvedoble
