@@ -64,7 +64,7 @@ Sigue estos pasos para instalar y configurar la aplicación:
 
 ```bash
 git clone https://github.com/wwwl1t/Detector-de-WAF-y-Herramientas-Uvedoble.git
-cd Detector-de-WAF-y-Herramientas-Uvedoble
+cd Detector-de-WAF-y-Herramientas-Uvedoble```
 
 ### Instalar Dependencias
 ```sudo pip install -r requirements.txt```
