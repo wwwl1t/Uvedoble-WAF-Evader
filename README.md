@@ -1,7 +1,7 @@
 # Detector de WAF y Herramientas - Uvedoble
 
 
-![image](https://github.com/user-attachments/assets/05fd2616-9b74-4f57-bfb7-f99d34fbbb50)
+![image](https://github.com/user-attachments/assets/05fd2616-9b74-4f57-bfb7-f99d34fbbb50|100x100)
 
 ## Tabla de Contenidos
 
