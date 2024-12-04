@@ -1,8 +1,6 @@
 # Detector de WAF y Herramientas - Uvedoble
 
 
-![image](https://github.com/user-attachments/assets/05fd2616-9b74-4f57-bfb7-f99d34fbbb50|100x100)
-
 ## Tabla de Contenidos
 
 - [Descripción](#descripción)
@@ -48,20 +46,6 @@ El proyecto está personalizado y desarrollado por **Uvedoble**, ofreciendo una 
   - Modo claro y oscuro.
   - Barra de título y barra inferior personalizada con el nombre del desarrollador, **Uvedoble**.
 
-## Capturas de Pantalla
-
-![Pantalla Principal](![image](https://github.com/user-attachments/assets/df11f543-c616-475c-9521-d7e38aa79418)
-)
-*Pantalla principal de la aplicación.*
-
-![Detección de WAF](path_to_waf_detection.png)
-*Sección de detección de WAFs.*
-
-![Encode/Decode](path_to_encode_decode.png)
-*Sección de codificación y decodificación.*
-
-![Evasor WAF SQLi](path_to_evasor.png)
-*Sección de evasión de WAF SQLi.*
 
 ## Prerequisitos
 
@@ -79,5 +63,5 @@ Sigue estos pasos para instalar y configurar la aplicación:
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/Detector-de-WAF-y-Herramientas-Uvedoble.git
+git clone https://github.com/wwwl1t/Detector-de-WAF-y-Herramientas-Uvedoble.git
 cd Detector-de-WAF-y-Herramientas-Uvedoble
