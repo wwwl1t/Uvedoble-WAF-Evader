@@ -1,5 +1,6 @@
 # Detector de WAF y Herramientas - Uvedoble
 
+Esta herramienta fue creada para utilizarse dentro de lo legal dígase pruebas de penetración, no me hago responsable del mal uso que le des. chau
 
 ## Tabla de Contenidos
 
